@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Babel Clone</title>
+  </head>
+  <body>
+    <main id ="main-doc" class="main-container">
+      <div class="content_nav_container">
+         <!-- Navbar -->
+         <section>
+            <nav id="navbar" class="nav">
+               <header class="nav__header">
+                  <p>What is <img class="logo" src="https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg" alt="logo"/>?</p>
+                  <div class="menu">
+                     <div class="menu__btn">
+                     </div>
+                  </div>
+               </header>
+               <ul class="nav__links-list">
+                  <li>
+                     <a class="nav-link nav__link" href="#Babel_is_a_JavaScript_compiler">Babel is a JavaScript compiler</a>
+                  </li>
+                  <li>
+                     <a class="nav-link nav__link" href="#ES2015_and_beyond">ES2015 and beyond</a>
+                  </li>
+                  <li>
+                     <a class="nav-link nav__link" href="#JSX_and_React">JSX and React</a>
+                  </li>
+                  <li>
+                     <a class="nav-link nav__link" href="#Type_Annotations_(Flow_and_TypeScript)">Type Annotations (Flow and TypeScript)</a>
+                  </li>
+                  <li>
+                     <a class="nav-link nav__link" href="#Pluggable">Pluggable</a>
+                  </li>
+                  <li>
+                     <a class="nav-link nav__link" href="#Debuggable">Debuggable</a>
+                  </li>
+                  <li>
+                     <a class="nav-link nav__link" href="#Spec_Compliant">Spec Compliant</a>
+                  </li>
+                  <li>
+                     <a class="nav-link nav__link" href="#Compact">Compact</a>
+                  </li>
+               </ul>
+            </nav>
+         </section>
+         <!-- Content -->
+         <div class="content">
+            <h1 class="title">What is babel?</h1>
+            <section id="Babel_is_a_JavaScript_compiler" class="main-section content__section">
+               <header>
+                  <a href="#Babel_is_a_JavaScript_compiler">
+                     <h2 class="subtitle">Babel is a JavaScript compiler</h2>
+                  </a>
+               </header>
+               <p>Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you:</p>
+               <ul class="content__list">
+                  <li>Transform syntax</li>
+                  <li>Polyfill features that are missing in your target environment (through a third-party polyfill such as <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">core-js</a>)</li>
+                  <li>Source code transformations (codemods)</li>
+                  <li>And more! (check out these <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">videos</a> for inspiration)</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+               </ul>
+               <code class="code">
+                  <div class="code__title">Javascript
+                     <button class="copy-btn" value="copy-1"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-1">
+                     <pre>
+     <span class="code__comment">// Babel Input: ES2015 arrow function</span>
+     [<span class="code__number">1</span>, <span class="code__number">2</span>, <span class="code__number">3</span>].<span class="code__keyword">map</span>(<span class="code__number">n</span> => n + <span class="code__number">1</span>);
+   
+     <span class="code__comment">// Babel Output: ES5 equivalent</span>
+     [<span class="code__number">1</span>, <span class="code__number">2</span>, <span class="code__number">3</span>].<span class="code__keyword">map</span>(<span class="code__keyword">function</span>(n) {
+       <span class="code__keyword">return</span> n + <span class="code__number">1</span>;
+     });
+               </pre>
+                  </div>
+               </code>
+               <p class="remark">For an awesome tutorial on compilers, check out <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">the-super-tiny-compiler</a>, which also explains how Babel itself works on a high level.</p>
+            </section>
+            <section id="ES2015_and_beyond" class="main-section content__section">
+               <header>
+                  <a href="#ES2015_and_beyond">
+                     <h2 class="subtitle">ES2015 and beyond</h2>
+                  </a>
+               </header>
+               <p>Babel has support for the latest version of JavaScript through syntax transformers.</p>
+               <p>These <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">plugins</a> allow you to use new syntax, right now without waiting for browser support. Check out our <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">usage guide</a> to get started.<code> Test code</code></p>
+            </section>
+            <section id="JSX_and_React" class="main-section content__section">
+               <header>
+                  <a href="#JSX_and_React">
+                     <h2 class="subtitle">JSX and React</h2>
+                  </a>
+               </header>
+               <p>Babel can convert JSX syntax! Check out our <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">React preset</a> to get started. Use it together with the <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">babel-sublime</a> package to bring syntax highlighting to a whole new level.</p>
+               <p>You can install this preset with</p>
+               <code class="code">
+                  <div class="code__title">Shell
+                     <button class="copy-btn" value="copy-2"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-2">
+                     <pre>npm install --save-dev @babel/preset-react</pre>
+                  </div>
+               </code>
+               <p>and add @babel/preset-react to your Babel configuration.</p>
+               <code class="code">
+                  <div class="code__title">JSX
+                     <button class="copy-btn" value="copy-3"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-3">
+                     <pre>
+     <span class="code__keyword">export default</span> React.createClass({
+       getInitialState() {
+         <span class="code__keyword">return</span> { num: <span class="code__keyword">this</span>.getRandomNumber() };
+       },
+   
+       getRandomNumber() {
+         <span class="code__keyword">return</span><span class="code__number">Math</span>.ceil(<span class="code__number">Math</span>.random() * <span class="code__number">6</span>);
+       },
+   
+       render() {
+         <span class="code__keyword">return</span> (
+             <!-- Todo -->
+           <span class="code__html">&lt;div&gt;</span>
+             Your dice roll:
+             {this.state.num}
+           <span class="code__html">&lt;/div&gt;</span>
+         );
+       },
+     });
+               </pre>
+                  </div>
+               </code>
+               <p class="remark">Learn more about <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">JSX</a></p>
+            </section>
+            <section id="Type_Annotations_(Flow_and_TypeScript)" class="main-section content__section">
+               <header>
+                  <a href="#Type_Annotations_(Flow_and_TypeScript)">
+                     <h2 class="subtitle">Type Annotations (Flow and TypeScript)</h2>
+                  </a>
+               </header>
+               <p>Babel can strip out type annotations! Check out either our <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">Flow preset</a> or <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">TypeScript preset</a> to get started. Keep in mind that Babel doesn't do type checking; you'll still have to install and use Flow or TypeScript to check types.</p>
+               <p>You can install the flow preset with</p>
+               <code class="code">
+                  <div class="code__title">Shell
+                     <button class="copy-btn" value="copy-4"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-4">
+                     <pre>npm install --save-dev @babel/preset-flox</pre>
+                  </div>
+               </code>
+               <code class="code">
+                  <div class="code__title">Javascript
+                     <button class="copy-btn" value="copy-5"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-5">
+                     <pre>
+     <span class="code__comment">// @flow</span>
+     <span class="code__keyword">function</span><span class="code__fn"> square</span>(<span class="code__number">n: number</span>): <span class="code__fn">number</span> {
+       <span class="code__keyword">return</span> n * n;
+     }</pre>
+                  </div>
+               </code>
+               <p>or the typescript preset with</p>
+               <code class="code">
+                  <div class="code__title">Shell
+                     <button class="copy-btn" value="copy-6"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-6">
+                     <pre>npm install --save-dev @babel/preset-typescript</pre>
+                  </div>
+               </code>
+               <code class="code">
+                  <div class="code__title">Shell
+                     <button class="copy-btn" value="copy-7"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-7">
+                     <pre>
+     <span class="code__keyword">function</span> <span class="code__fn">Greeter</span>(<span class="code__number">greeting: string</span>) {
+       <span class="code__keyword">this</span>.greeting = greeting;
+     }</pre>
+                  </div>
+               </code>
+               <p class="remark">Learn more about <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">Flow</a> and <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">TypeScript</a></p>
+            </section>
+            <section id="Pluggable" class="main-section content__section">
+               <header>
+                  <a href="#Pluggable">
+                     <h2 class="subtitle">Pluggable</h2>
+                  </a>
+               </header>
+               <p>Babel is built out of plugins. Compose your own transformation pipeline using existing plugins or write your own. Easily use a set of plugins by using or creating a <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">preset</a>. <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">Learn more →</a></p>
+               <p>Create a plugin on the fly with <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">astexplorer.net</a> or use <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">generator-babel-plugin</a> to generate a plugin template.</p>
+               <code class="code">
+                  <div class="code__title">Javascript
+                     <button class="copy-btn" value="copy-8"><img class="copy-btn__icon" src="https://www.freeiconspng.com/thumbs/copy-icon/copy-duplicate-editor-files-icon--18.png"/><span> Copy</span></button>
+                  </div>
+                  <div class="code__body" id="copy-8">
+                     <pre><span class="code__comment">// A plugin is just a function</span>
+     <span class="code__keyword">export default function</span>({ <span class="code__number">types: t</span> }) {
+       <span class="code__keyword">return</span> {
+         visitor: {
+           Identifier(path) {
+             <span class="code__keyword">let</span> name = path.node.name; <span class="code__comment">// reverse the name: JavaScript -> tpircSavaJ</span>
+             path.node.name = name
+               .split(<span class="code__str">""</span>)
+               .reverse()
+               .join(<span class="code__str">""</span>);
+           },
+         },
+       };
+     }
+     </pre>
+                  </div>
+               </code>
+            </section>
+            <section id="Debuggable" class="main-section content__section">
+               <header>
+                  <a href="#Debuggable">
+                     <h2 class="subtitle">Debuggable</h2>
+                  </a>
+               </header>
+               <p><b>Source map</b> support so you can debug your compiled code with ease.</p>
+            </section>
+            <section id="Spec_Compliant" class="main-section content__section">
+               <header>
+                  <a href="#Spec_Compliant">
+                     <h2 class="subtitle">Spec Compliant</h2>
+                  </a>
+               </header>
+               <p>Babel tries to stay true to the ECMAScript standard, as much as reasonably possible. It may also have specific options to be more spec compliant as a tradeoff to performance.</p>
+            </section>
+            <section id="Compact" class="main-section content__section">
+               <header>
+                  <a href="#Compact">
+                     <h2 class="subtitle">Compact</h2>
+                  </a>
+               </header>
+               <p>Babel tries using the least amount of code possible with no dependence on a bulky runtime.</p>
+               <p> This may be difficult to do in cases, and there are <a class="content__link" href="https://youtu.be/dQw4w9WgXcQ" target="_blank">"assumptions"</a> options that tradeoff spec compliancy for readability, file size, and speed.</p>
+            </section>
+            <section class="credits">
+               <hr />
+               <br />
+               <p>The content of this page was taken from <a class="content__link" href="https://babeljs.io/docs/en/" target="_blank">Babel official documentation.</a></p>
+            </section>
+         </div>
+      </div>
+      <!--footer -->
+      <footer class="footer">
+         <p>Developed by Miguel Angel Echeverri Quiroz. ©2022. All rights reserved.</p>
+      </footer>
+   </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
